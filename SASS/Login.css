@@ -1,0 +1,63 @@
+.LoginPage {
+  background: darkslateblue;
+  min-height: 100vh;
+}
+
+.cross {
+  float: right;
+  padding: 20px;
+  color: white;
+  font-size: 22px;
+}
+
+.cross:hover {
+  background: red;
+  border-radius: 8px;
+}
+
+.LoginCard {
+  background: slategrey;
+  border: 3px solid white;
+  border-radius: 10px;
+  box-shadow: 20px 50px 50px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  min-height: 380px;
+  min-width: 380px;
+  margin: -190px 0 0 -190px;
+}
+
+.LoginForm {
+  position: absolute;
+  text-align: center;
+  width: 250px;
+  top: 50%;
+  left: 50%;
+  margin: -160px 0 0 -125px;
+}
+.LoginForm input, .LoginForm button {
+  border: 1px solid black;
+  background: black;
+  color: white;
+  border-radius: 10px;
+  padding: 10px;
+  margin: 2px;
+  width: 200px;
+  border: 2px solid white;
+}
+.LoginForm .Link, .LoginForm button {
+  text-decoration: none;
+  border-radius: 20px;
+}
+.LoginForm .google {
+  border-radius: 100px;
+  width: fit-content;
+  padding-bottom: 20px;
+}
+
+.Icon {
+  font-size: 60px;
+}
+
+/*# sourceMappingURL=Login.css.map */

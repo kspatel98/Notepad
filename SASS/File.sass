@@ -1,0 +1,58 @@
+$lg: 60em
+$md: 40em 
+
+@mixin responsive($size)
+    @media(min-width: $size)
+        @content
+    
+.file
+    height: 100vh
+    background: darkslateblue
+    color: white
+    position: absolute
+    padding: 5px
+    margin: 3px 0px
+    border: 1px solid black
+    border-top-right-radius: 15px 
+    border-bottom-right-radius: 15px 
+    overflow-y: scroll
+    .parent:hover
+        cursor: pointer
+        background: black
+    .openchild:hover
+        cursor: pointer
+        background: grey
+        border: 1px solid black
+        border-radius: 10px
+        color: black
+.delete:hover
+    color: red
+.parent
+    border: 1px solid white
+    border-radius: 10px
+    margin-bottom: 3px
+    padding: 10px 5px 
+    text-align: left
+    font-size: 14px
+    font-weight: bold
+.openchild
+    padding: 10px 25px 
+    text-align: left
+    font-size: 12px
+    justify-content: space-between
+.openchild>div
+    width: 100%
+    
+.delete
+    font-size: 20px    
+
+@include responsive($md)
+    .parent
+        font-size: 16px
+    .openchild
+        font-size: 14px
+@include responsive($lg)
+    .parent
+        font-size: 18px
+    .openchild
+        font-size: 16px

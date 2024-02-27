@@ -1,0 +1,37 @@
+.about {
+  margin: 1% 3%;
+  min-height: 100vh;
+  width: 100%;
+  border: 1px solid gray;
+  background: darkslateblue;
+}
+
+.aboutHeader {
+  display: flex;
+  font-weight: bold;
+  min-height: 180px;
+  font-size: 28px;
+  background: rgb(80, 80, 160);
+  background-image: url("/notepad.png");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+
+.aboutHeader > span {
+  margin: auto;
+}
+
+.aboutContent {
+  color: rgb(210, 210, 210);
+  padding: 20px;
+  text-align: center;
+}
+
+.aboutContentGrid {
+  display: grid;
+  gap: 5px;
+  grid-template-columns: 30% 70%;
+  text-align: start;
+}
+
+/*# sourceMappingURL=About.css.map */
